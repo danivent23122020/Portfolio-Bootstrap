@@ -72,14 +72,35 @@ html {
 /* responsive scrollup */
 @media screen and (max-width: 550px) {
     .btn-scrollup {
-    width: 60px;
-    height: 60px;
+        width: 60px;
+        height: 60px;
+    }
+    .icone {
+        width: 50px;
+    }
+    .btn-scrollup.active {
+        visibility: visible;
+        opacity: 1;
+    }
 }
-.icone {
-    width: 50px;
+/* setting box portfolio */
+
+.card {
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
 }
-.btn-scrollup.active {
-    visibility: visible;
-    opacity: 1;
+.card:hover {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
 }
+.service{
+    /* margin-right: 10px; */
+    box-shadow: 5px 5px 15px rgb(180, 178, 178);
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.service:hover{
+    box-shadow: 10px 10px 10px rgb(180, 178, 178);
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
 }
