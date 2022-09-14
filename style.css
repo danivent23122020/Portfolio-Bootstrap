@@ -8,9 +8,25 @@ html {
 }
 .navbar {
     border-bottom: 1px solid black;
+    position: relative;
 }
 .navbar a {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 10px;
+    transition: all 0.2s ease-in-out;
+}
+.navbar a:hover {
+    background-color: rgb(180, 178, 178);
+    color: blanchedalmond;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+/* responsive */
+@media screen and (max-width: 990px) {
+    .navbar a:hover {
+        background-color: transparent;
+    }
 }
 .imgProfileAcc {
     width: 150px;
@@ -52,4 +68,18 @@ html {
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease-in-out;
+}
+/* responsive scrollup */
+@media screen and (max-width: 550px) {
+    .btn-scrollup {
+    width: 60px;
+    height: 60px;
+}
+.icone {
+    width: 50px;
+}
+.btn-scrollup.active {
+    visibility: visible;
+    opacity: 1;
+}
 }
