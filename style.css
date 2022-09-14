@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    border-bottom: 1px solid black;
+}
+.navbar a {
+    font-size: 25px;
+}
+.imgProfileAcc {
+    width: 150px;
+}
+.titreCompetence {
+    margin: 120px 0 20px 0;
+}
+/* Contact */
+.titreContact {
+    padding: 40px 0 50px 0;
+    /* fusion */
+    margin-top: 100px;
+}
+/* btn scrollup */
+.btn-scrollup {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+.icone {
+    width: 60px;
+}
+.btn-scrollup.active {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
