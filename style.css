@@ -40,51 +40,8 @@ html {
     /* fusion */
     margin-top: 100px;
 }
-/* btn scrollup */
-.btn-scrollup {
-    width: 90px;
-    height: 90px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 100;
-    transition: all 0.5s ease-in-out;
-}
-.icone {
-    width: 60px;
-}
-.btn-scrollup.active {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease-in-out;
-}
-/* responsive scrollup */
-@media screen and (max-width: 550px) {
-    .btn-scrollup {
-        width: 60px;
-        height: 60px;
-    }
-    .icone {
-        width: 50px;
-    }
-    .btn-scrollup.active {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-/* setting box portfolio */
 
+/* setting box portfolio */
 .card {
     margin-right: 10px;
     transition: all 0.2s ease-in-out;
@@ -93,14 +50,45 @@ html {
     transform: translateY(-10px);
     transition: all 0.2s ease-in-out;
 }
-.service{
+.service {
     /* margin-right: 10px; */
     box-shadow: 5px 5px 15px rgb(180, 178, 178);
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
 }
-.service:hover{
+.service:hover {
     box-shadow: 10px 10px 10px rgb(180, 178, 178);
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
+}
+
+/**** Scroll top ****/
+.scrolltop {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    color: black;
+    background: #fff;
+    border-radius: 0.4rem;
+    z-index: 100;
+    transition: 0.4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover {
+    color: #fff;
+    background-color: #000000b0;
+}
+
+.scrolltop__icon {
+    font-size: 40px;
+}
+
+/* Show scrolltop */
+.active {
+    visibility: visible;
 }

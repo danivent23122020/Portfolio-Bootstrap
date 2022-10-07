@@ -7,12 +7,12 @@ allNavItems.forEach((item) =>
     })
 );
 
+// ****** scrollup ******
 //display btn
 window.addEventListener("scroll", function () {
-    let scroll = this.document.querySelector(".btn-scrollup");
+    let scroll = this.document.querySelector(".scrolltop");
     scroll.classList.toggle("active", window.scrollY > 300);
 });
-
 // scrollup
 const btn = document.querySelector(".btn-scrollup");
 btn.addEventListener("click", () => {
@@ -22,3 +22,4 @@ btn.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
