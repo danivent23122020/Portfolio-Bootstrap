@@ -6,6 +6,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+/****** navbar ******/
 .navbar {
     border-bottom: 1px solid black;
     position: relative;
@@ -35,14 +36,21 @@ html {
     margin: 120px 0 20px 0;
 }
 
-/* Contact */
-.titreContact {
-    padding: 40px 0 50px 0;
-    /* fusion */
-    margin-top: 100px;
+/* section Accueil */
+.accueil {
+    width: 100%;
+    height: 80vh;
+}
+.txtAccueil {
+    width: auto;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-/* setting box portfolio */
+/* section portfolio */
 .card {
     margin-right: 10px;
     transition: all 0.2s ease-in-out;
@@ -51,8 +59,48 @@ html {
     transform: translateY(-10px);
     transition: all 0.2s ease-in-out;
 }
+
+/**** Section About ****/
+.about {
+    width: 100%;
+    height: 90vh;
+}
+.cont-about {
+    width: 80%;
+    height: auto;
+}
+.cont-cols {
+    width: 100%;
+    height: 100%;
+}
+/* responsive about */
+@media screen and (max-width: 1200px) {
+    .about {
+        height: auto;
+    }
+    .cont-about {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cont-cols {
+        width: 80%;
+    }
+    .col-about {
+        margin-bottom: 20px;
+    }
+}
+
+/******* Section Services *******/
+.services {
+    width: 100%;
+    height: 90vh;
+}
+.cont-services {
+    width: 90%;
+    height: 100%;
+}
 .service {
-    /* margin-right: 10px; */
     box-shadow: 5px 5px 15px rgb(180, 178, 178);
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
@@ -62,11 +110,37 @@ html {
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
 }
-
-/**** Section About ****/
-#about{
-    width: 100%;
-    height: 90vh;
+/* responsive services */
+@media screen and (max-width: 1200px) {
+    .services {
+        height: auto;
+    }
+    .cont-services {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .service {
+        margin-bottom: 20px;
+    }
+    .cont-services {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .cont-services {
+        width: 90%;
+    }
+    .service {
+        margin-bottom: 20px;
+    }
+}
+/******* Contact *******/
+.titreContact {
+    padding: 40px 0 50px 0;
+    /* fusion */
+    margin-top: 100px;
 }
 
 /**** Scroll top ****/

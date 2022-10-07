@@ -71,13 +71,12 @@
                 </ul>
             </div>
         </nav>
-
-        <!-- Accueil -->
+        <!-------------- Accueil -------------->
         <section
-            class="text-white bg-dark text-center d-flex flex-column align-items-center w-100 h-75 p-3 mx-auto"
+            class="accueil text-white bg-dark text-center d-flex flex-column justify-content-center align-items-center"
             id="accueil"
         >
-            <div class="txtAccueil mt-auto">
+            <div class="txtAccueil">
                 <img
                     src="ressources/man.svg"
                     class="imgProfileAcc"
@@ -93,16 +92,12 @@
                         >En savoir plus</a
                     >
                 </p>
-            </div>
-
-            <footer class="txtAccueilBot mt-auto">
                 <div class="inner">
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-            </footer>
+            </div>
         </section>
-
-        <!-- Portfolio -->
+        <!------------- Portfolio ------------->
         <section class="py-5" id="portfolio">
             <h2 class="text-center mb-5 text-uppercase">Portfolio</h2>
             <div class="container">
@@ -502,40 +497,50 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section About / a propos -->
-        <section class="bg-dark text-white mb-0" id="about">
-            <div class="container py-5">
+        <!------ Section About / a propos ------>
+        <section class="about bg-dark text-white mb-0" id="about">
+            <div
+                class="container-fluid cont-about d-flex flex-column align-items-center justify-content-around py-5"
+            >
                 <!-- About Section Heading -->
                 <h2 class="text-center text-uppercase text-white pb-3">
                     À Propos
                 </h2>
 
-                <!-- About Section Content -->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto">
+                <!-- Content cols -->
+                <div class="row cont-cols">
+                    <!-- Content col -->
+                    <div class="col-lg-4 ml-auto col-about">
                         <h3 class="text-center">Mes études</h3>
-                        <p class="lead">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Voluptas nostrum non at veritatis deleniti!
-                            Quisquam libero voluptates optio quas minima,
-                            dignissimos temporibus nam. Harum id, aliquam facere
-                            dolorem assumenda corporis!.
+                        <p class="lead text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Veritatis officiis itaque nisi! Ducimus
+                            dolores doloremque iste natus exercitationem rem
+                            autem modi repellendus enim, dicta facere eos.
+                            Dolores minus, iusto rem debitis labore numquam
+                            officia neque asperiores dolorem quae expedita in
+                            quisquam quo excepturi sapiente adipisci sequi
+                            eligendi deleniti vitae! Eos?
                         </p>
                     </div>
-                    <div class="col-lg-4 mr-auto">
-                        <h3 class="text-center">Mon expériences</h3>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Sunt itaque ex cumque fugiat perspiciatis nam
-                            ipsa necessitatibus quasi ullam delectus
-                            consequuntur ipsum ab, neque autem provident hic,
-                            corrupti unde impedit!
+                    <div class="col-lg-4 mr-auto col-about">
+                        <h3 class="text-center">Mes expériences</h3>
+                        <p class="lead text-justify">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Minus aut quod nulla, molestiae, maxime totam
+                            eius doloribus dolorum neque aperiam doloremque
+                            dolorem repellat aspernatur facere laborum at
+                            distinctio pariatur sed nisi iusto dolor voluptates
+                            alias sapiente eos? Eveniet temporibus ex
+                            consequatur nesciunt optio, omnis beatae asperiores
+                            sed nisi aliquam praesentium ea sit. Placeat,
+                            perferendis! Veritatis, cumque? Debitis tempora
+                            incidunt enim?
                         </p>
                     </div>
-                    <div class="col-lg-4 mr-auto">
+                    <div class="col-lg-4 mr-auto col-about">
                         <h3 class="text-center">Mes qualités</h3>
-                        <p class="lead">
+                        <p class="lead text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Sunt itaque ex cumque fugiat perspiciatis nam
                             ipsa necessitatibus quasi ullam delectus
@@ -546,7 +551,7 @@
                 </div>
                 <div class="text-center mt-4">
                     <a
-                        class="btn btn-xl btn-outline-light"
+                        class="btn btn-lg btn-outline-light"
                         href="#contact-form"
                     >
                         Contactez-moi
@@ -554,17 +559,16 @@
                 </div>
             </div>
         </section>
-
-        <!-- Mes Services -->
-        <section class="services">
-            <h2 class="text-center my-5 text-uppercase" id="services">
-                Mes Services
-            </h2>
-            <div class="container">
+        <!------------ Mes Services ------------>
+        <section class="services" id="services">
+            <div
+                class="container-fluid cont-services d-flex flex-column align-items-center justify-content-around py-5"
+            >
+                <h2 class="text-center my-5 text-uppercase">Mes Services</h2>
                 <!-- Three columns of text below the carousel -->
-                <div class="row d-flex justify-content-around">
+                <div class="row d-flex justify-content-around cont-services">
                     <div
-                        class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center service"
+                        class="col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center service"
                     >
                         <img
                             class=""
@@ -591,7 +595,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center service"
+                        class="col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center service"
                     >
                         <img
                             class=""
@@ -618,7 +622,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center service"
+                        class="col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center service"
                     >
                         <img
                             class=""
@@ -647,9 +651,7 @@
                 </div>
             </div>
         </section>
-
-        <!--  Contact Form  -->
-
+        <!------------ Contact Form ------------>
         <section class="bg-dark text-white mb-0" id="contact">
             <div class="container">
                 <h2 class="titreContact text-center">Rentrons en Contact !</h2>
@@ -750,7 +752,7 @@
                 </div>
             </div>
         </section>
-
+        <!--------------- Footer --------------->
         <footer class="bg-dark text-white">
             <p class="text-center m-0">@Tout Droits Réservés - John Doe</p>
         </footer>
