@@ -753,9 +753,55 @@
             </div>
         </section>
         <!--------------- Footer --------------->
-        <footer class="bg-dark text-white">
-            <p class="text-center m-0">@Tout Droits Réservés - John Doe</p>
+        <footer class="text-center bg-dark text-white p-4">
+            <div class="row">
+                <div class="container">
+                    <div class="col">
+                        <p class="text-center m-0 lead">
+                            Tous droits réservés &copy;
+                            <a
+                                href="https://daniel-ventura.fr/"
+                                target="_blank"
+                                class="year"
+                                >Prestation Web 42</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <!---------------- Cookie Banner -------------->
+        <div id="cookieModal">
+            <div
+                id="cookieContent"
+                class="bg-light d-flex flex-column align-items-center"
+            >
+                <img src="./ressources/cookie.png" alt="icone cookie" />
+                <p>
+                    Nous utilisons des cookies sur notre site Web pour vous offrir l'expérience la plus pertinente en mémorisant vos préférences et vos visites répétées. En cliquant sur "Accepter", vous consentez à l'utilisation de TOUS les cookies.
+                </p>
+                <a href="https://google.fr" target="_blank" class="my-2"
+                    >Politique de confidentialité</a
+                >
+                <!-- div buttons -->
+                <div class="btns d-flex justify-content-around">
+                    <button
+                        type="button"
+                        id="acceptCookie"
+                        class="btn btn-success btn-lg"
+                    >
+                        Accepter
+                    </button>
+                    <button
+                        type="button"
+                        id="refusedCookie"
+                        class="btn btn-danger btn-lg"
+                    >
+                        Refuser
+                    </button>
+                </div>
+            </div>
+        </div>
         <!-- JavaScript Bundle with Popper -->
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

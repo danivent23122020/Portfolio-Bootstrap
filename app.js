@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
     scroll.classList.toggle("active", window.scrollY > 300);
 });
 // scrollup
-const btn = document.querySelector(".btn-scrollup");
+const btn = document.querySelector(".scrolltop");
 btn.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
@@ -23,3 +23,35 @@ btn.addEventListener("click", () => {
     });
 });
 
+// ****** cookies ******
+// *** cookie modal ***
+let cookieModal = document.querySelector("#cookieModal");
+let acceptCookie = document.querySelector("#acceptCookie");
+let cancelCookie = document.querySelector("#refusedCookie");
+//
+cancelCookie.addEventListener("click", function () {
+    cookieModal.classList.remove("active");
+});
+//
+acceptCookie.addEventListener("click", function () {
+    let d = new Date();
+    d.setMinutes(2 + d.getMinutes());
+    document.cookie = "PortfolioCvDevBootstrap=true; expires = ' + d + ';";
+    cookieModal.classList.remove("active");
+});
+
+// check cookie exist
+const checkCookie = () => {
+    let input = document.cookie.split("=");
+    if (input[0] == "PortfolioCvDevBootstrap") {
+        cookieModal.classList.remove("active");
+    } else {
+        cookieModal.classList.add("active");
+    }
+};
+// check cookie exist page already load
+window.onload = () => {
+    setTimeout(() => {
+        checkCookie();
+    }, 1000);
+};

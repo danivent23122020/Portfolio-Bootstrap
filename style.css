@@ -67,11 +67,11 @@ html {
 }
 .cont-about {
     width: 80%;
-    height: auto;
+    height: 100%;
 }
 .cont-cols {
     width: 100%;
-    height: 100%;
+    height: 60%;
 }
 /* responsive about */
 @media screen and (max-width: 1200px) {
@@ -163,6 +163,7 @@ html {
 .scrolltop:hover {
     color: #fff;
     background-color: #000000b0;
+    text-decoration: none;
 }
 
 .scrolltop__icon {
@@ -172,4 +173,69 @@ html {
 /* Show scrolltop */
 .active {
     visibility: visible;
+}
+
+/* === section cookie === */
+#cookieModal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+}
+#cookieModal.active {
+    display: flex;
+}
+#cookieContent {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    background-color: var(--main-yellow);
+}
+#cookieContent img {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+}
+#cookieContent p {
+    text-align: justify;
+    color: #111;
+    font-size: var(--text-lg);
+    line-height: var(--space-28);
+}
+#cookieContent a {
+    font-size: 18px;
+    text-decoration: none;
+}
+.btns{
+    width: 15%;
+}
+.hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+/* show popup */
+@media only screen and (max-width: 600px) {
+    #cookiePopup {
+        width: 100%;
+    }
+    .hide {
+        bottom: 2em;
+        right: 0;
+    }
+    .show {
+        right: 0;
+        bottom: 0;
+    }
 }
